@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source\Game">
+      <UniqueIdentifier>{d07083e1-f7ab-4514-9399-0045e8656362}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Main">
+      <UniqueIdentifier>{55dc1b96-bc8c-45fc-8dce-5c0ce37d9694}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data">
+      <UniqueIdentifier>{d4dc2ed3-3af2-49dc-ab58-85e167601a8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Shaders">
+      <UniqueIdentifier>{88fe26c9-2a76-4701-8e99-31e64dc3f2de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Game\GameObjects">
+      <UniqueIdentifier>{96f9ac06-1467-49e5-a66a-ff56f110e41d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Game\Base">
+      <UniqueIdentifier>{f493b7de-66a1-43ee-9d79-eba98a33367f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Game\Mesh">
+      <UniqueIdentifier>{a1fadd2c-1c68-43ed-8701-95bd10046644}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Game\Box2D">
+      <UniqueIdentifier>{5669d498-f0b2-46f3-bbd2-67355f966284}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Game\Imgui">
+      <UniqueIdentifier>{97a1459a-f50d-4e50-8f65-dbd0e31eae0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Scene">
+      <UniqueIdentifier>{df4e93c1-102c-4ade-8292-6f9d7a408134}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Game\MeatBoyScene">
+      <UniqueIdentifier>{f6e364b0-f679-458c-983c-51d8e964c7a8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\GamePCH.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Main\WinMain.cpp">
+      <Filter>Source\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\PlayerObject.cpp">
+      <Filter>Source\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\SampleScene.cpp">
+      <Filter>Source\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\GameObjects\CameraObject.cpp">
+      <Filter>Source\Game\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\GameObjects\GameObject.cpp">
+      <Filter>Source\Game\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\GameObjects\PlayerController.cpp">
+      <Filter>Source\Game\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Base\ResourceManager.cpp">
+      <Filter>Source\Game\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Base\Scene.cpp">
+      <Filter>Source\Game\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Mesh\Mesh.cpp">
+      <Filter>Source\Game\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Mesh\MeshShapes.cpp">
+      <Filter>Source\Game\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Game.cpp">
+      <Filter>Source\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Box2D\World.cpp">
+      <Filter>Source\Game\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Imgui\ImguiManager.cpp">
+      <Filter>Source\Game\Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Material.cpp">
+      <Filter>Source\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Box2D\ContactListener.cpp">
+      <Filter>Source\Game\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\ScoreDisplay.cpp">
+      <Filter>Source\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\MeatBoyScene\SawBladeObject.cpp">
+      <Filter>Source\Game\MeatBoyScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Base\PreLoadedScene.cpp">
+      <Filter>Source\Game\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Base\SceneManager.cpp">
+      <Filter>Source\Game\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Memory.cpp">
+      <Filter>Source\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\MeatBoyScene\BloodTrail.cpp">
+      <Filter>Source\Game\MeatBoyScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\MeatBoyScene\MissileObject.cpp">
+      <Filter>Source\Game\MeatBoyScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\MeatBoyScene\TurretObject.cpp">
+      <Filter>Source\Game\MeatBoyScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\MeatBoyScene\BandageGirlObject.cpp">
+      <Filter>Source\Game\MeatBoyScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Base\StateMachine.cpp">
+      <Filter>Source\Game\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\MeatBoyScene\LevelSelectScene.cpp">
+      <Filter>Source\Game\MeatBoyScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\MeatBoyScene\TitleScene.cpp">
+      <Filter>Source\Game\MeatBoyScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Base\SpriteSheet.cpp">
+      <Filter>Source\Game\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\TweenFuncs.cpp">
+      <Filter>Source\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\MeatBoyScene\SoundCue.cpp">
+      <Filter>Source\Game\MeatBoyScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\MeatBoyScene\BandagePickupObject.cpp">
+      <Filter>Source\Game\MeatBoyScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\FBODefinition.cpp">
+      <Filter>Source\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\MeatBoyScene\BloodChunkObject.cpp">
+      <Filter>Source\Game\MeatBoyScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\MeatBoyScene\SkyBox.cpp">
+      <Filter>Source\Game\MeatBoyScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\TweenObject.cpp">
+      <Filter>Source\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\MeatBoyScene\SecondLevelScene.cpp">
+      <Filter>Source\Game\MeatBoyScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\MeatBoyScene\PauseScene.cpp">
+      <Filter>Source\Game\MeatBoyScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\MeatBoyScene\ProjectileSawObject.cpp">
+      <Filter>Source\Game\MeatBoyScene</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\GamePCH.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Main\WinMain.h">
+      <Filter>Source\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\PlayerObject.h">
+      <Filter>Source\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\SampleScene.h">
+      <Filter>Source\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\GameObjects\CameraObject.h">
+      <Filter>Source\Game\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\GameObjects\GameObject.h">
+      <Filter>Source\Game\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\GameObjects\PlayerController.h">
+      <Filter>Source\Game\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Base\ResourceManager.h">
+      <Filter>Source\Game\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Base\Scene.h">
+      <Filter>Source\Game\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Mesh\Mesh.h">
+      <Filter>Source\Game\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Mesh\VertexFormat.h">
+      <Filter>Source\Game\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Game.h">
+      <Filter>Source\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Box2D\World.h">
+      <Filter>Source\Game\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Imgui\ImguiManager.h">
+      <Filter>Source\Game\Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Material.h">
+      <Filter>Source\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Box2D\ContactListener.h">
+      <Filter>Source\Game\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\ScoreDisplay.h">
+      <Filter>Source\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\RayCastResultCallback.h">
+      <Filter>Source\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Main\SimplePool.h">
+      <Filter>Source\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\MeatBoyScene\SawBladeObject.h">
+      <Filter>Source\Game\MeatBoyScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Base\PreLoadedScene.h">
+      <Filter>Source\Game\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Base\SceneManager.h">
+      <Filter>Source\Game\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Base\SimplePool.h">
+      <Filter>Source\Game\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\CPPList.h">
+      <Filter>Source\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Memory.h">
+      <Filter>Source\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\MeatBoyScene\BloodTrail.h">
+      <Filter>Source\Game\MeatBoyScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\MeatBoyScene\MissileObject.h">
+      <Filter>Source\Game\MeatBoyScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\MeatBoyScene\TurretObject.h">
+      <Filter>Source\Game\MeatBoyScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\MeatBoyScene\BandageGirlObject.h">
+      <Filter>Source\Game\MeatBoyScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Base\StateMachine.h">
+      <Filter>Source\Game\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\MeatBoyScene\LevelSelectScene.h">
+      <Filter>Source\Game\MeatBoyScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\MeatBoyScene\TitleScene.h">
+      <Filter>Source\Game\MeatBoyScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Base\SpriteSheet.h">
+      <Filter>Source\Game\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\TweenFuncs.h">
+      <Filter>Source\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\MeatBoyScene\SoundCue.h">
+      <Filter>Source\Game\MeatBoyScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\MeatBoyScene\BandagePickupObject.h">
+      <Filter>Source\Game\MeatBoyScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\FBODefinition.h">
+      <Filter>Source\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\MeatBoyScene\BloodChunkObject.h">
+      <Filter>Source\Game\MeatBoyScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\MeatBoyScene\SkyBox.h">
+      <Filter>Source\Game\MeatBoyScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\TweenObject.h">
+      <Filter>Source\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\MeatBoyScene\SecondLevelScene.h">
+      <Filter>Source\Game\MeatBoyScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\MeatBoyScene\PauseScene.h">
+      <Filter>Source\Game\MeatBoyScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\MeatBoyScene\ProjectileSawObject.h">
+      <Filter>Source\Game\MeatBoyScene</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Data\Shaders\texture.frag">
+      <Filter>Data\Shaders</Filter>
+    </None>
+    <None Include="..\Data\Shaders\texture.vert">
+      <Filter>Data\Shaders</Filter>
+    </None>
+    <None Include="..\Data\Scenes\test.scene">
+      <Filter>Data\Scene</Filter>
+    </None>
+    <None Include="..\Data\Shaders\ScoreDisplay.vert">
+      <Filter>Data\Shaders</Filter>
+    </None>
+    <None Include="..\Data\Shaders\ScoreDisplay.frag">
+      <Filter>Data\Shaders</Filter>
+    </None>
+    <None Include="..\Data\Shaders\normal.frag">
+      <Filter>Data\Shaders</Filter>
+    </None>
+    <None Include="..\Data\Shaders\normal.vert">
+      <Filter>Data\Shaders</Filter>
+    </None>
+    <None Include="..\Data\Shaders\Cubemap.frag">
+      <Filter>Data\Shaders</Filter>
+    </None>
+    <None Include="..\Data\Shaders\Cubemap.vert">
+      <Filter>Data\Shaders</Filter>
+    </None>
+    <None Include="..\Data\Shaders\LightHelpers.light">
+      <Filter>Data\Shaders</Filter>
+    </None>
+    <None Include="..\Data\Shaders\LightTexture.frag">
+      <Filter>Data\Shaders</Filter>
+    </None>
+    <None Include="..\Data\Shaders\LightTexture.vert">
+      <Filter>Data\Shaders</Filter>
+    </None>
+    <None Include="..\Data\Shaders\Reflections.frag">
+      <Filter>Data\Shaders</Filter>
+    </None>
+    <None Include="..\Data\Shaders\Reflections.vert">
+      <Filter>Data\Shaders</Filter>
+    </None>
+    <None Include="..\Data\Shaders\Pixels.frag">
+      <Filter>Data\Shaders</Filter>
+    </None>
+    <None Include="..\Data\Shaders\Pixels.vert">
+      <Filter>Data\Shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\readme.txt" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,61 @@
+// Calculate diffuse
+
+vec3 GetNormalizedDir2Light(vec3 surfacepos, vec3 lightpos)
+{
+	vec3 Dir2Light = lightpos - surfacepos;
+	vec3 normdir = normalize(Dir2Light);
+	return normdir;
+  
+}
+
+vec3 CalculateLightDirection(vec3 surfacepos, vec3 lightpos)
+{
+	vec3 Direction2Light = lightpos - surfacepos;
+	
+	return Direction2Light;
+}
+
+vec3 CalculateDiffuse(vec3 surfacepos, vec3 lightpos, vec3 normal, float brightness, vec4 color, float radius)
+{
+		float distance = length(CalculateLightDirection(surfacepos,lightpos ));
+		float DiffusePerc = max(dot(GetNormalizedDir2Light(surfacepos,lightpos), normal), 0.0) - (distance / radius);
+
+		vec3 Diffuse = color + DiffusePerc * brightness;
+		return Diffuse;
+}
+
+vec3 CalculateSpecular(vec3 Surfacepos, vec3 camerapos, vec4 Lightcolor, vec3 normal, float SpecularStrength, vec3 normalizedLightDir)
+{
+	vec3 DirtoCam = normalize(camerapos - Surfacepos );
+
+	vec3 ReflectedDirection = reflect(-normalizedLightDir, normal);
+
+	float Specularperc = pow(max(dot(DirtoCam,ReflectedDirection ),0),32);
+
+	vec3 FinalSpecular = (SpecularStrength * Specularperc * Lightcolor.xyz);
+
+	return FinalSpecular;
+
+
+
+
+}
+
+
+
+vec3 CalculateAmbientLighting(float AmbientStrength, vec4 ambientColor)
+{
+
+	vec3 ambient = AmbientStrength * ambientColor;
+	return ambient;
+}
+
+
+
+
+
+
+
+
+
+  

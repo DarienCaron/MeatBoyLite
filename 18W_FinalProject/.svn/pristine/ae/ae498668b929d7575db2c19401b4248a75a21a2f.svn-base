@@ -1,0 +1,8 @@
+varying vec3 normals;
+
+void main()
+{
+
+gl_FragColor = (normals, 1.0);
+
+}

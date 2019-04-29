@@ -1,0 +1,18 @@
+uniform vec3 vertex_pos;
+uniform vec3 vertex_normal;
+
+uniform mat4 u_WorldMatrix;
+uniform mat4 u_ViewMatrix;
+uniform mat4 u_ProjectionMatrix;
+uniform mat4 u_ModelMatrix;
+
+varying vec3 normals;
+
+void main()
+{
+
+normals = vertex_normal;
+gl_Position = u_ProjectionMatrix * vec4(vec3(u_ViewMatrix * u_ModelMatrix * vec4(vertex_position, 1.0)), 1.0);
+
+
+}

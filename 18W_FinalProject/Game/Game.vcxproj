@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{48AF2354-9C8B-482A-BA77-C703F2CB1724}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Game17F</RootNamespace>
+    <ProjectName>Game</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Output\$(ProjectName)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Output\Intermediate\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)Output\$(ProjectName)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Output\Intermediate\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>Source;../Libraries/Framework/Libraries/Box2D</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>GamePCH.h</PrecompiledHeaderFile>
+      <TreatWarningAsError>true</TreatWarningAsError>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>Source;../Libraries/Framework/Libraries/Box2D</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>GamePCH.h</PrecompiledHeaderFile>
+      <TreatWarningAsError>true</TreatWarningAsError>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\GamePCH.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Base\PreLoadedScene.cpp" />
+    <ClCompile Include="Source\Game\Base\ResourceManager.cpp" />
+    <ClCompile Include="Source\Game\Base\Scene.cpp" />
+    <ClCompile Include="Source\Game\Base\SceneManager.cpp" />
+    <ClCompile Include="Source\Game\Base\SpriteSheet.cpp" />
+    <ClCompile Include="Source\Game\Base\StateMachine.cpp" />
+    <ClCompile Include="Source\Game\Box2D\ContactListener.cpp" />
+    <ClCompile Include="Source\Game\Box2D\World.cpp" />
+    <ClCompile Include="Source\Game\FBODefinition.cpp" />
+    <ClCompile Include="Source\Game\Game.cpp" />
+    <ClCompile Include="Source\Game\GameObjects\CameraObject.cpp" />
+    <ClCompile Include="Source\Game\GameObjects\GameObject.cpp" />
+    <ClCompile Include="Source\Game\GameObjects\PlayerController.cpp" />
+    <ClCompile Include="Source\Game\Imgui\ImguiManager.cpp" />
+    <ClCompile Include="Source\Game\Material.cpp" />
+    <ClCompile Include="Source\Game\MeatBoyScene\BandageGirlObject.cpp" />
+    <ClCompile Include="Source\Game\MeatBoyScene\BandagePickupObject.cpp" />
+    <ClCompile Include="Source\Game\MeatBoyScene\BloodChunkObject.cpp" />
+    <ClCompile Include="Source\Game\MeatBoyScene\BloodTrail.cpp" />
+    <ClCompile Include="Source\Game\MeatBoyScene\LevelSelectScene.cpp" />
+    <ClCompile Include="Source\Game\MeatBoyScene\MissileObject.cpp" />
+    <ClCompile Include="Source\Game\MeatBoyScene\PauseScene.cpp" />
+    <ClCompile Include="Source\Game\MeatBoyScene\ProjectileSawObject.cpp" />
+    <ClCompile Include="Source\Game\MeatBoyScene\SawBladeObject.cpp" />
+    <ClCompile Include="Source\Game\MeatBoyScene\SecondLevelScene.cpp" />
+    <ClCompile Include="Source\Game\MeatBoyScene\SkyBox.cpp" />
+    <ClCompile Include="Source\Game\MeatBoyScene\SoundCue.cpp" />
+    <ClCompile Include="Source\Game\MeatBoyScene\TitleScene.cpp" />
+    <ClCompile Include="Source\Game\MeatBoyScene\TurretObject.cpp" />
+    <ClCompile Include="Source\Game\Memory.cpp" />
+    <ClCompile Include="Source\Game\Mesh\Mesh.cpp" />
+    <ClCompile Include="Source\Game\Mesh\MeshShapes.cpp" />
+    <ClCompile Include="Source\Game\PlayerObject.cpp" />
+    <ClCompile Include="Source\Game\SampleScene.cpp" />
+    <ClCompile Include="Source\Game\ScoreDisplay.cpp" />
+    <ClCompile Include="Source\Game\TweenFuncs.cpp" />
+    <ClCompile Include="Source\Game\TweenObject.cpp" />
+    <ClCompile Include="Source\Main\WinMain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\GamePCH.h" />
+    <ClInclude Include="Source\Game\Base\PreLoadedScene.h" />
+    <ClInclude Include="Source\Game\Base\ResourceManager.h" />
+    <ClInclude Include="Source\Game\Base\Scene.h" />
+    <ClInclude Include="Source\Game\Base\SceneManager.h" />
+    <ClInclude Include="Source\Game\Base\SimplePool.h" />
+    <ClInclude Include="Source\Game\Base\SpriteSheet.h" />
+    <ClInclude Include="Source\Game\Base\StateMachine.h" />
+    <ClInclude Include="Source\Game\Box2D\ContactListener.h" />
+    <ClInclude Include="Source\Game\Box2D\World.h" />
+    <ClInclude Include="Source\Game\CPPList.h" />
+    <ClInclude Include="Source\Game\FBODefinition.h" />
+    <ClInclude Include="Source\Game\Game.h" />
+    <ClInclude Include="Source\Game\GameObjects\CameraObject.h" />
+    <ClInclude Include="Source\Game\GameObjects\GameObject.h" />
+    <ClInclude Include="Source\Game\GameObjects\PlayerController.h" />
+    <ClInclude Include="Source\Game\Imgui\ImguiManager.h" />
+    <ClInclude Include="Source\Game\Material.h" />
+    <ClInclude Include="Source\Game\MeatBoyScene\BandageGirlObject.h" />
+    <ClInclude Include="Source\Game\MeatBoyScene\BandagePickupObject.h" />
+    <ClInclude Include="Source\Game\MeatBoyScene\BloodChunkObject.h" />
+    <ClInclude Include="Source\Game\MeatBoyScene\BloodTrail.h" />
+    <ClInclude Include="Source\Game\MeatBoyScene\LevelSelectScene.h" />
+    <ClInclude Include="Source\Game\MeatBoyScene\MissileObject.h" />
+    <ClInclude Include="Source\Game\MeatBoyScene\PauseScene.h" />
+    <ClInclude Include="Source\Game\MeatBoyScene\ProjectileSawObject.h" />
+    <ClInclude Include="Source\Game\MeatBoyScene\SawBladeObject.h" />
+    <ClInclude Include="Source\Game\MeatBoyScene\SecondLevelScene.h" />
+    <ClInclude Include="Source\Game\MeatBoyScene\SkyBox.h" />
+    <ClInclude Include="Source\Game\MeatBoyScene\SoundCue.h" />
+    <ClInclude Include="Source\Game\MeatBoyScene\TitleScene.h" />
+    <ClInclude Include="Source\Game\MeatBoyScene\TurretObject.h" />
+    <ClInclude Include="Source\Game\Memory.h" />
+    <ClInclude Include="Source\Game\Mesh\Mesh.h" />
+    <ClInclude Include="Source\Game\Mesh\VertexFormat.h" />
+    <ClInclude Include="Source\Game\PlayerObject.h" />
+    <ClInclude Include="Source\Game\RayCastResultCallback.h" />
+    <ClInclude Include="Source\Game\SampleScene.h" />
+    <ClInclude Include="Source\Game\ScoreDisplay.h" />
+    <ClInclude Include="Source\Game\TweenFuncs.h" />
+    <ClInclude Include="Source\Game\TweenObject.h" />
+    <ClInclude Include="Source\Main\SimplePool.h" />
+    <ClInclude Include="Source\Main\WinMain.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Data\Scenes\test.scene" />
+    <None Include="..\Data\Shaders\Cubemap.frag" />
+    <None Include="..\Data\Shaders\Cubemap.vert" />
+    <None Include="..\Data\Shaders\LightHelpers.light" />
+    <None Include="..\Data\Shaders\LightTexture.frag" />
+    <None Include="..\Data\Shaders\LightTexture.vert" />
+    <None Include="..\Data\Shaders\normal.frag" />
+    <None Include="..\Data\Shaders\normal.vert" />
+    <None Include="..\Data\Shaders\Pixels.frag" />
+    <None Include="..\Data\Shaders\Pixels.vert" />
+    <None Include="..\Data\Shaders\Reflections.frag" />
+    <None Include="..\Data\Shaders\Reflections.vert" />
+    <None Include="..\Data\Shaders\ScoreDisplay.frag" />
+    <None Include="..\Data\Shaders\ScoreDisplay.vert" />
+    <None Include="..\Data\Shaders\texture.frag" />
+    <None Include="..\Data\Shaders\texture.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\readme.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

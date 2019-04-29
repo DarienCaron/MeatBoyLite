@@ -1,0 +1,12 @@
+{
+	"Levels_Beaten":	[{
+			"Level1 Beaten":	1
+		}, {
+			"Level2 Beaten":	0
+		}],
+	"Bandages_Collected":	[{
+			"Level1 Bandage":	0
+		}, {
+			"Level2 Bandage":	0
+		}]
+}

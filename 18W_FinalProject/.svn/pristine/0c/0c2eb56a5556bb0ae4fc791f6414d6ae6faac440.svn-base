@@ -1,0 +1,250 @@
+{
+	"GameObjects":	[{
+			"Name":	"Ball",
+			"Pos":	[-1.813458, 5.240489, -0.000008],
+			"Rot":	[0, 0, 0],
+			"Scale":	[0.75, 0.75, 0.75],
+			"Flags":	["Player"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"Offset":	[0, 0],
+					"PrimitiveType":	"Circle",
+					"Static":	0,
+					"Density":	1,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"Sprite",
+					"Material":	"TextureMario",
+					"Texture":	"Data/Textures/Mario Pinball.png",
+					"Shader":	"Texture",
+					"Color":	[0, 255, 0, 255]
+				}]
+		}, {
+			"Name":	"Ramp1",
+			"Pos":	[-1.490790, 3.720092, -0.000008],
+			"Rot":	[0, 0, 26.729193],
+			"Scale":	[5.100000, 0.500000, 1],
+			"Flags":	[],
+            "Components": [
+                {
+                    "Type": "2D Collision Object",
+                    "Offset": [ 0, 0 ],
+                    "PrimitiveType": "Box",
+                    "Static": 1,
+                    "Density": 1,
+                    "IsSensor": 0,
+                    "Friction": 0.200000,
+                    "Restitution": 0
+                },
+                {
+                    "Type": "Sprite",
+                    "Material": "TextureCrate",
+                    "Texture": "Data/Textures/Green.png",
+                    "Shader": "Texture",
+                    "Color": [ 255, 0, 255, 255 ]
+                }
+            ]
+		}, {
+			"Name":	"Ramp2",
+			"Pos":	[3.413475, -0.099262, -0.000005],
+			"Rot":	[0, 0, -33.471615],
+			"Scale":	[5.100000, 0.500000, 1],
+			"Flags":	[],
+            "Components": [
+                {
+                    "Type": "2D Collision Object",
+                    "Offset": [ 0, 0 ],
+                    "PrimitiveType": "Box",
+                    "Static": 1,
+                    "Density": 1,
+                    "IsSensor": 0,
+                    "Friction": 0.200000,
+                    "Restitution": 0
+                },
+                {
+                    "Type": "Sprite",
+                    "Material": "TextureCrate",
+                    "Texture": "Data/Textures/Green.png",
+                    "Shader": "Texture",
+                    "Color": [ 255, 0, 255, 255 ]
+                }
+            ]
+		}, {
+			"Name":	"Ground",
+			"Pos":	[-0.190114, -2.051372, -0.000006],
+			"Rot":	[0, 0, 1.099661],
+			"Scale":	[14.700000, 0.500000, 1],
+			"Flags":	[],
+            "Components": [
+                {
+                    "Type": "2D Collision Object",
+                    "Offset": [ 0, 0 ],
+                    "PrimitiveType": "Box",
+                    "Static": 1,
+                    "Density": 1,
+                    "IsSensor": 0,
+                    "Friction": 0.200000,
+                    "Restitution": 0
+                },
+                {
+                    "Type": "Sprite",
+                    "Material": "TextureCrate",
+                    "Texture": "Data/Textures/Green.png",
+                    "Shader": "Texture",
+                    "Color": [ 255, 0, 255, 255 ]
+                }
+            ]
+		}, {
+			"Name":	"LeftWall",
+			"Pos":	[-5, 1.170000, -0.000006],
+			"Rot":	[0, 0, 90],
+			"Scale":	[14.700000, 0.500000, 1],
+			"Flags":	[],
+            "Components": [
+                {
+                    "Type": "2D Collision Object",
+                    "Offset": [ 0, 0 ],
+                    "PrimitiveType": "Box",
+                    "Static": 1,
+                    "Density": 1,
+                    "IsSensor": 0,
+                    "Friction": 0.200000,
+                    "Restitution": 0
+                },
+                {
+                    "Type": "Sprite",
+                    "Material": "TextureCrate",
+                    "Texture": "Data/Textures/Green.png",
+                    "Shader": "Texture",
+                    "Color": [ 255, 0, 255, 255 ]
+                }
+            ]
+		}, {
+			"Name":	"RightWall",
+			"Pos":	[5, 1.170000, -0.000006],
+			"Rot":	[0, 0, 90],
+			"Scale":	[14.700000, 0.500000, 1],
+			"Flags":	[],
+            "Components": [
+                {
+                    "Type": "2D Collision Object",
+                    "Offset": [ 0, 0 ],
+                    "PrimitiveType": "Box",
+                    "Static": 1,
+                    "Density": 1,
+                    "IsSensor": 0,
+                    "Friction": 0.200000,
+                    "Restitution": 0
+                },
+                {
+                    "Type": "Sprite",
+                    "Material": "TextureCrate",
+                    "Texture": "Data/Textures/Green.png",
+                    "Shader": "Texture",
+                    "Color": [ 255, 0, 255, 255 ]
+                }
+            ]
+		}, {
+			"Name":	"Pin1",
+			"Pos":	[-1.249243, -1.181055, -0.000008],
+			"Rot":	[0, 0, 0],
+			"Scale":	[0.150000, 1, 1],
+			"Flags":	[],
+            "Components": [
+                {
+                    "Type": "2D Collision Object",
+                    "Offset": [ 0, 0 ],
+                    "PrimitiveType": "Box",
+                    "Static": 0,
+                    "Density": 1,
+                    "IsSensor": 0,
+                    "Friction": 0.200000,
+                    "Restitution": 0
+                },
+                {
+                    "Type": "Sprite",
+                    "Material": "TextureWall",
+                    "Texture": "Data/Textures/Red.png",
+                    "Shader": "Texture",
+                    "Color": [ 255, 0, 0, 255 ]
+                }
+            ]
+		}, {
+			"Name":	"Pin2",
+			"Pos":	[-0.385712, -1.181055, -0.000008],
+			"Rot":	[0, 0, 0],
+			"Scale":	[0.150000, 1, 1],
+			"Flags":	[],
+            "Components": [
+                {
+                    "Type": "2D Collision Object",
+                    "Offset": [ 0, 0 ],
+                    "PrimitiveType": "Box",
+                    "Static": 0,
+                    "Density": 1,
+                    "IsSensor": 0,
+                    "Friction": 0.200000,
+                    "Restitution": 0
+                },
+                {
+                    "Type": "Sprite",
+                    "Material": "TextureWall",
+                    "Texture": "Data/Textures/Red.png",
+                    "Shader": "Texture",
+                    "Color": [ 255, 0, 0, 255 ]
+                }
+            ]
+		}, {
+			"Name":	"Pin3",
+			"Pos":	[0.290310, -1.181055, -0.000008],
+			"Rot":	[0, 0, 0],
+			"Scale":	[0.150000, 1, 1],
+			"Flags":	[],
+            "Components": [
+                {
+                    "Type": "2D Collision Object",
+                    "Offset": [ 0, 0 ],
+                    "PrimitiveType": "Box",
+                    "Static": 0,
+                    "Density": 1,
+                    "IsSensor": 0,
+                    "Friction": 0.200000,
+                    "Restitution": 0
+                },
+                {
+                    "Type": "Sprite",
+                    "Material": "TextureWall",
+                    "Texture": "Data/Textures/Red.png",
+                    "Shader": "Texture",
+                    "Color": [ 255, 0, 0, 255 ]
+                }
+            ]
+		}, {
+			"Name":	"Pin4",
+			"Pos":	[-1.919997, -1.181055, -0.000008],
+			"Rot":	[0, 0, 0],
+			"Scale":	[0.150000, 1, 1],
+			"Flags":	[],
+            "Components": [
+                {
+                    "Type": "2D Collision Object",
+                    "Offset": [ 0, 0 ],
+                    "PrimitiveType": "Box",
+                    "Static": 0,
+                    "Density": 1,
+                    "IsSensor": 0,
+                    "Friction": 0.200000,
+                    "Restitution": 0
+                },
+                {
+                    "Type": "Sprite",
+                    "Material": "TextureWall",
+                    "Texture": "Data/Textures/Red.png",
+                    "Shader": "Texture",
+                    "Color": [ 255, 0, 0, 255 ]
+                }
+            ]
+		}]
+}
